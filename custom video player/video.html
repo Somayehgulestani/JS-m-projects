@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Video Player</title>
+
+    <link rel="stylesheet" href="video.css">
+    <link rel="stylesheet" href="videostyle2.css">
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="main-div">
+    <h1>Custom Video Players</h1>
+    <video src="custom-video-player/gone.mp4" id="vd" class="video" poster="custom-video-player/photo_2026-01-14_21-43-01.jpg" ></video>
+    <div class="cnl-div">
+    <button class="btn" id="play">  <i class="fa fa-play fa-2x"></i> </button>
+    <button class="btn" id="stop"> <i class="fa fa-stop fa-2x"></i> </button>
+    <input type="range" id="range" min="0" max="100" step="0.1" value="0">
+     <span id="time">00:00</span>
+    </div>
+</div>
+    
+<!-- video.addEventListener("timeupdate", updateTime);
+function updateTime() {
+    ranger.value = (video.currentTime / video.duration)* 100;
+
+    let minute = Math.floor(video.currentTime / 60);
+    if (minute < 10) {
+        minute = "0" + String(minute);
+    }
+
+    let second = Math.floor(video.currentTime % 60);
+    if (second < 10) {
+        second = "0" + String(second);
+    }
+    
+    timer.innerHTML = `${minute}:${second}`;
+} -->
+    
+
+    <script src="video.js"></script>
+</body>
+</html>
