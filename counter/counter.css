@@ -1,0 +1,86 @@
+:root{
+    --color3 :#0e6366;
+    --color5:#5adbb9;
+
+}
+#main{
+            display: flex;
+            justify-content: center;
+        }
+        .pt-div{
+            top: 0;
+            left: 0%;
+            width: 400px;
+            height: 400px;
+            background-image: url(../Desktop/photo_2025-09-16_16-40-39.jpg);
+            background-size: cover;
+            opacity: 8;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 50px;
+            
+        }
+        .main-text{
+        color: var(--color3);
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 80px;
+
+
+        }
+        .container{
+            width: 300px;
+            height: 200px;
+            background-color: rgba(255, 255, 255, 0.07);
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            padding-left: 30px;
+            
+        }
+        .text-container{
+            width: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .text-feild{
+            color: var(--color5) ;
+            font-size: 50px;
+        }
+        .buttoms{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+        }
+        .btn{
+            margin: 10px;
+            width: 80px;
+            /* padding: 20px 40px; */
+           border: none;
+           background-color: rgb(29, 29, 29);
+           color: var(--color5);
+           display: block;
+           font-size: 30px;
+           cursor: pointer;
+        }
+        .btn:active{
+            transform: scale(.97);
+
+        }
+        #up{
+            font-size: 30px;
+        }
+        #down{
+            font-size: 25px;
+            font-weight: bold;
+        }
+        #reset{
+            font-size: 20px;
+            font-weight: bold;
+        }
