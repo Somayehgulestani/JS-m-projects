@@ -1,63 +1,190 @@
-<!DOCTYPE html>
+
+    <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-             height: 100vh;
-           background: linear-gradient(135deg, #71b7e6, #9b59b6);
-        }
-        #cookie-popup {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 15px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-        }
+  <meta charset="UTF-8">
+  <title>Simple One Page Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        #cookie-popup p {
-            margin: 0;
-        }
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
 
-        #cookie-popup button {
-            margin-top: 10px;
-            background-color: #16bb24;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            font-size: large;
-            cursor: pointer;
-        }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+      background-color: #f4f4f4;
+      color: #333;
+      position: relative;
+    }
 
-        #cookie-popup button:hover {
-            background-color: #357ae8;
-        }
-       .show{
-    display: block;
-}
+    #header {
+      background-color: #222;
+      color: #fff;
+      padding: 30px 20px;
+      text-align: center;
+    }
 
-    </style>
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 12px;
+      font-weight: bold;
+    }
+
+    main {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section {
+      background: #fff;
+      padding: 30px;
+      margin-bottom: 30px;
+      border-radius: 8px;
+    }
+
+    h2 {
+      margin-top: 0;
+      color: #222;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    footer {
+      background-color: #222;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+    #rating{
+    display: flex;
+    justify-content: center;
+    
+    }
+    .rating-box{
+        position: absolute;
+        width: 25%;
+        background-color: rgb(0, 0, 0, 0.8);
+        padding: 25px 50px 35px;
+        border-radius: 25px;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
+        bottom: 7%;
+        display: none;
+    }
+    .rating-box > #star-header{
+        font-size: 22px;
+        color: #dadada;
+        font-weight: 500;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .rating-box .stars{
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        justify-content: center;
+    }
+    .stars i{
+        color: #e6e6e6;
+        font-size: 35px;
+        cursor: pointer;
+        transition: color 0.2s ease;
+    }
+    .stars i.active{
+        color: #ff9c1a;
+    }
+
+  </style>
 </head>
 <body>
-     <div id="cookie-popup">
-        <p>
-            This website uses cookies to ensure you get
-            the best experience on our website.
-        </p>
-        <button id="got">
-            Got it!
-        </button>
+
+<header id="header">
+  <h1>Simple One Page Website</h1>
+  <p>Clean, minimal and easy to understand</p>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+
+  <section id="home">
+    <h2>Welcome</h2>
+    <p>
+      Welcome to this simple one page website. This project is created
+      using only HTML and CSS to demonstrate basic page structure and layout.
+    </p>
+    <p>
+      It is ideal for beginners who want to understand how a real webpage
+      is organized.
+    </p>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>
+      We focus on creating clean and readable web layouts.
+      This example shows how sections, headers, and content blocks
+      work together in a single page.
+    </p>
+    <p>
+      Learning these basics is essential before moving on to JavaScript
+      or modern frameworks.
+    </p>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>HTML & CSS Fundamentals</li>
+      <li>Simple Website Layouts</li>
+      <li>Beginner-Friendly Projects</li>
+      <li>Clean and Semantic Markup</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>
+      If you would like to learn more or practice web development,
+      feel free to reach out.
+    </p>
+    <p>
+      Email: example@email.com
+    </p>
+
+  </section>
+
+</main>
+<div id="rating">
+<div class="rating-box">
+    <header id="star-header">How was your experience?</header>
+    <div class="stars">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
     </div>
+</div>
+</div>
+<footer>
+  <p>© 2026 Simple One Page Website</p>
+</footer>
 
     <script src="cookiesms.js"></script>
 </body>
 </html>
+
+
